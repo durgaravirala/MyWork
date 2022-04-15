@@ -1,0 +1,20 @@
+package com.programs.practice;
+
+public class MostRepeatedString {
+	
+	String s= "I am am Bhavani Kandukuri kandu my kids love me I love my kids I have two kids";
+	
+	/*FileInputStream fis = new FileInputStream(s);
+	BufferedInputStream bis = new BufferedInputStream(fis);*/
+   
+	/*while(s!=null) {
+	}*/
+	
+	String[] wordsList = s.split(" ");
+	
+		
+	for(int i=0; i<wordsList.length; i++) {
+		
+	}
+
+}

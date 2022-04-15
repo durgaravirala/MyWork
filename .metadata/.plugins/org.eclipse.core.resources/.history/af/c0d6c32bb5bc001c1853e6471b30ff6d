@@ -1,0 +1,43 @@
+package com.programs.practice;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class MostRepeatedString {
+	
+	public static void main(String[] s) {
+		
+	}
+	public void repeatedString() {
+	String s= "I am am Bhavani Kandukuri kandu my kids love me I love my kids I have two kids";
+	
+	/*FileInputStream fis = new FileInputStream(s);
+	BufferedInputStream bis = new BufferedInputStream(fis);*/
+   
+	/*while(s!=null) {
+	}*/
+	
+	String[] wordsList = s.split(" ");	
+	HashMap<String, Integer> stringMap = new HashMap<String, Integer> ();
+	
+	
+	for(int i=0; i<wordsList.length; i++) {
+		
+		if(stringMap.containsKey(wordsList[i])) {
+			stringMap.put(wordsList[i], stringMap.get(wordsList[i])+1);
+		} else stringMap.put(wordsList[i], 1);				
+	}
+	
+	Set<Entry<String, Integer>> entrySet = stringMap.entrySet();
+	int count = 0;
+	String mostRepeatedWord = "";
+	
+	for(Entry<String, Integer> word : entrySet) {
+		if(count<word.getValue())
+			count = word.getValue();
+		mostRepeatedWord = word.getKey();
+	}
+
+}
+}

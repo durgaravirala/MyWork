@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>TestNG:  Sample</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sample</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 10 12:37:15 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3940 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sample.CommonMethods.launchApplication()'><b>launchApplication</b><br>Test class: com.sample.CommonMethods</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;srcDir&apos; is not a directory: &apos;image.jpg&apos;
+	at org.apache.commons.io.FileUtils.requireDirectory(FileUtils.java:2635)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:682)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:630)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:531)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:502)
+	at com.sample.BaseTest.getScreenshot(BaseTest.java:120)
+	at com.sample.BaseTest.logInfoWithIBScreenshot(BaseTest.java:180)
+	at com.sample.CommonMethods.launchApplication(CommonMethods.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655795339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655795339'><pre>java.lang.IllegalArgumentException: Parameter &apos;srcDir&apos; is not a directory: &apos;image.jpg&apos;
+	at org.apache.commons.io.FileUtils.requireDirectory(FileUtils.java:2635)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:682)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:630)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:531)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:502)
+	at com.sample.BaseTest.getScreenshot(BaseTest.java:120)
+	at com.sample.BaseTest.logInfoWithIBScreenshot(BaseTest.java:180)
+	at com.sample.CommonMethods.launchApplication(CommonMethods.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.sample.CommonMethods@687080dc</td></tr>
+</table><p>
+</body>
+</html>

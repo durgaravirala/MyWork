@@ -1,0 +1,23 @@
+package com.programs.practice;
+
+public class ReverseString {
+
+	 int i;
+
+	public boolean reverseGivenString(String s) {
+		boolean result = false;
+		String reversedString = "";
+		if(i = 0; i<s.length(); i++) {
+			
+		}
+		
+		
+		return result ;
+	}
+	
+	public static void main(String s[]) {
+		ReverseString reverseString = new ReverseString();
+		reverseString.reverseGivenString("Bhanu");
+	}
+	
+}

@@ -1,0 +1,30 @@
+package com.sample;
+
+import java.io.IOException;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import com.sample.Config;
+
+public class CommonMethods extends BaseTest{
+	
+		protected static final Logger logger = Logger.getLogger(CommonMethods.class);
+		
+		static WebDriver driver;
+	
+	@Test
+	public void launchApplication() throws IOException {
+		System.setProperty("webdriver.chrome.driver", Config.chromeDriverPath);
+		driver = new ChromeDriver();
+		driver.get(Config.applicationURL);
+		driver.manage().window().maximize();
+	//	logInfoWithIBScreenshot("Launched URL", driver, "LaunchURL");
+		logInfoWithIBScreenshot("Launched URL", driver, "LaunchURL");
+		//Reports.getCurrentReporter().childLog.pass("Google home page displayed");
+		logPass("Launched application successful");
+	}
+
+}

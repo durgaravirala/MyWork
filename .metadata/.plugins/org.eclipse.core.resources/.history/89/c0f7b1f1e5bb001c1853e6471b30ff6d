@@ -1,0 +1,16 @@
+package com.programs.practice;
+
+public class IntegerPalindrome {
+
+	public void verifyGivenInteger(String s) {
+		
+		System.out.println("Reversed String is " );
+	
+	}
+	
+	public static void main(String s[]) {
+		IntegerPalindrome reverseString = new IntegerPalindrome();
+		reverseString.reverseGivenString("Bhanu");
+	}
+	
+}

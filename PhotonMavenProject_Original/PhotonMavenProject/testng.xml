@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="Suite">
+<test name = "Sample" parallel="classes" thread-count="1">
+<classes>
+<class name="SamplePhoton.PhotonMavenProject.FizzBuzz"/>
+<class name="SamplePhoton.PhotonMavenProject.RestAPIFizzBUzz"/>
+
+</classes>
+ </test>
+</suite>

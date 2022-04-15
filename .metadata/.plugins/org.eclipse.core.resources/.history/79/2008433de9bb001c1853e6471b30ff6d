@@ -1,0 +1,20 @@
+package com.programs.practice;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+
+public class MostRepeatedString {
+	
+	String s= "I am am Bhavani Kandukuri kandu my kids love me I love my kids I have two kids";
+	
+	/*FileInputStream fis = new FileInputStream(s);
+	BufferedInputStream bis = new BufferedInputStream(fis);*/
+ 
+	
+	
+	
+	
+	
+	
+
+}

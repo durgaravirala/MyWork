@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="482" started-at="2022-03-02T19:52:43 IST" finished-at="2022-03-02T19:52:44 IST">
+    <groups>
+    </groups>
+    <test name="Sample" duration-ms="482" started-at="2022-03-02T19:52:43 IST" finished-at="2022-03-02T19:52:44 IST">
+      <class name="SamplePhoton.PhotonMavenProject.FizzBuzz">
+        <test-method status="PASS" signature="validateInput()[pri:0, instance:SamplePhoton.PhotonMavenProject.FizzBuzz@4e7dc304]" name="validateInput" duration-ms="6" started-at="2022-03-02T19:52:43 IST" finished-at="2022-03-02T19:52:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInput -->
+      </class> <!-- SamplePhoton.PhotonMavenProject.FizzBuzz -->
+      <class name="SamplePhoton.PhotonMavenProject.RestAPIFizzBUzz">
+        <test-method status="PASS" signature="ValidateAPIResponseAndPrintOutputJSON()[pri:0, instance:SamplePhoton.PhotonMavenProject.RestAPIFizzBUzz@64729b1e]" name="ValidateAPIResponseAndPrintOutputJSON" duration-ms="447" started-at="2022-03-02T19:52:43 IST" finished-at="2022-03-02T19:52:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAPIResponseAndPrintOutputJSON -->
+      </class> <!-- SamplePhoton.PhotonMavenProject.RestAPIFizzBUzz -->
+    </test> <!-- Sample -->
+  </suite> <!-- Suite -->
+</testng-results>
